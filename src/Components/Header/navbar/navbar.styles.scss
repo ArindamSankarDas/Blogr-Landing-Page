@@ -1,0 +1,48 @@
+.navbar {
+  font-family: "Overpass", sans-serif;
+  width: 100vw;
+  height: 15vh;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 500;
+    margin: 0 2rem;
+    letter-spacing: 0.2rem;
+  }
+  &::before {
+    content: "Blogr";
+    color: white;
+    margin-right: 2rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+  }
+}
+
+.authentication {
+  .btn {
+    border: none;
+    font-size: 1.6rem;
+    margin: 0 1.2rem;
+    cursor: pointer;
+    font-weight: 600;
+    &:first-child {
+      background: transparent;
+      color: #fff;
+    }
+    &:last-child {
+      padding: 1rem 3rem;
+      border-radius: 2rem;
+    }
+  }
+}
