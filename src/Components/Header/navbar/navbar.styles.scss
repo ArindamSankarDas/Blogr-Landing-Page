@@ -1,3 +1,9 @@
+:root {
+  --white-text: #fff;
+  --Light-red: hsl(356, 100%, 66%);
+  --Very-light-red: hsl(13, 100%, 72%);
+}
+
 .navbar {
   font-family: "Overpass", sans-serif;
   width: 100vw;
@@ -11,16 +17,34 @@
 
 .links {
   a {
+    position: relative;
     text-decoration: none;
     font-size: 1.6rem;
-    color: #fff;
+    color: var(--white-text);
     font-weight: 500;
     margin: 0 2rem;
     letter-spacing: 0.2rem;
+
+    &:hover,
+    :active {
+      text-decoration: underline;
+    }
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 25%;
+      left: 100%;
+      background: url(../../../assets/images/icon-arrow-light.svg) no-repeat;
+      margin-left: 0.2rem;
+    }
   }
+
   &::before {
     content: "Blogr";
-    color: white;
+    color: var(--white-text);
     margin-right: 2rem;
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
@@ -36,13 +60,23 @@
     margin: 0 1.2rem;
     cursor: pointer;
     font-weight: 600;
+
     &:first-child {
       background: transparent;
       color: #fff;
     }
+
     &:last-child {
       padding: 1rem 3rem;
       border-radius: 2rem;
+      background-color: white;
+      color: var(--Light-red);
+
+      &:hover,
+      :active {
+        color: var(--white-text);
+        background-color: var(--Very-light-red);
+      }
     }
   }
 }

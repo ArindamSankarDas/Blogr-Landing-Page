@@ -1,0 +1,63 @@
+:root {
+  --white-text: #fff;
+  --Grayish-blue: hsl(240, 2%, 79%);
+  --Very-light-red: hsl(13, 100%, 72%);
+}
+
+.title {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5.5rem;
+}
+
+.title_heading {
+  h1 {
+    font-size: 5rem;
+    font-family: "Ubuntu", sans-serif;
+    color: var(--white-text);
+  }
+  h2 {
+    font-size: 2rem;
+    margin: 2rem;
+    font-family: "Overpass", sans-serif;
+    color: var(--Grayish-blue);
+  }
+}
+
+.title_btn {
+  margin-top: 3rem;
+  .btn {
+    border: none;
+    padding: 1.2rem 2rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: "Overpass", sans-serif;
+    letter-spacing: 0.1rem;
+    &:first-child {
+      background-color: var(--white-text);
+      margin-right: 1rem;
+      padding-top: calc(1.2rem + 0.2rem);
+      &:hover,
+      :active {
+        background-color: var(--Very-light-red);
+        color: var(--white-text);
+      }
+    }
+    &:last-child {
+      background-color: transparent;
+      border: 2px solid var(--white-text);
+      color: var(--white-text);
+      &:hover,
+      :active {
+        background-color: var(--white-text);
+        color: var(--Very-light-red);
+      }
+    }
+  }
+}
