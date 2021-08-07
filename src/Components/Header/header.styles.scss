@@ -1,5 +1,4 @@
 :root {
-  --size: 150rem;
   --Very-light-red: hsl(13, 100%, 72%);
   --Light-red: hsl(353, 100%, 62%);
 }
@@ -16,7 +15,7 @@
   background-size: cover;
   background-position: center;
   border-bottom-left-radius: 10rem;
-  overflow: hidden;
+  overflow: unset;
 
   &::before {
     content: "";
@@ -26,7 +25,13 @@
     top: 0;
     right: 0;
     background: url(../../assets/images/bg-pattern-intro.svg) no-repeat;
-    background-size: var(--size) var(--size);
+    background-size: cover;
     background-position: center;
+  }
+}
+
+@media (max-width: 547px) {
+  .header {
+    height: 64vh;
   }
 }
