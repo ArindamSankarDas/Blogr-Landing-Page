@@ -1,0 +1,77 @@
+.details {
+  width: 100%;
+  height: 100%;
+  margin: 10rem 0;
+  h1 {
+    font-size: 2.5rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    text-align: center;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .container_flex {
+      width: 50vw;
+      .sub_container {
+        margin: 5rem 0 5rem 8rem;
+        text-align: left;
+        font-family: "Overpass", sans-serif;
+        h2 {
+          margin-bottom: 0.8rem;
+          font-size: 1.8rem;
+        }
+        p {
+          font-size: 1.5rem;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .logo {
+      width: 45vw;
+      height: 50rem;
+      background: url(../../assets/images/illustration-editor-desktop.svg)
+        no-repeat;
+      background-position: right;
+      background-size: contain;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .details {
+    margin-bottom: 2rem;
+    .container {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      .container_flex {
+        width: 100%;
+        .sub_container {
+          width: 100vw;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+          word-wrap: wrap;
+          &:first-child {
+            margin-bottom: 4rem;
+          }
+          p {
+            padding: 1rem 5rem;
+          }
+        }
+      }
+
+      .logo {
+          background-image: url(../../assets/images/illustration-editor-mobile.svg);
+        background-position: center;
+        height: 30rem;
+      }
+    }
+  }
+}
