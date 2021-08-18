@@ -15,7 +15,7 @@ const Details = () => {
             </div>
           ))}
         </div>
-        <div className="logo"></div>
+        <div className="editor_logo"></div>
       </div>
     </div>
   );
