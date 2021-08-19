@@ -44,6 +44,9 @@ $Very_dark_desaturated_blue: hsl(237, 23%, 32%);
 
   .container {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     z-index: 10;
     width: 40%;
     h2,
@@ -52,9 +55,10 @@ $Very_dark_desaturated_blue: hsl(237, 23%, 32%);
       color: white;
     }
     h2 {
+      width: 100%;
       font-size: 2rem;
       font-weight: bolder;
-      margin-bottom: 1.2rem;
+      margin-bottom: -10%;
     }
     p {
       font-size: 1.5rem;
@@ -75,6 +79,9 @@ $Very_dark_desaturated_blue: hsl(237, 23%, 32%);
       width: 100%;
       text-align: center;
       margin: 5rem;
+      h2 {
+        margin-bottom: 0;
+      }
       p {
         padding: 2rem 5rem 2rem;
       }
