@@ -1,41 +1,68 @@
-import React, { useState } from "react";
+import React from "react";
+import BRAND_DATA from "../../.../../../assets/data/brand_data";
 import "./navbar.styles.scss";
 
-const Navbar = (props) => {
-  const [showNavItems, setshowNavItems] = useState(false);
-  const [togglerClose, setTogglerClose] = useState(false);
+class Navbar extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      showItems: false,
+      showLinks: false,
+    };
+  }
 
-  const toggleNavMenu = () => {
-    setshowNavItems(!showNavItems);
-    setTogglerClose(!togglerClose);
+  toggleNavMenu = () => {
+    if (this.state.showItems === false) {
+      this.setState({ showItems: true });
+    } else {
+      this.setState({ showItems: false });
+    }
   };
 
-  return (
-    <div className="navbar">
-      <div className="logo" />
-      <div className={showNavItems ? "nav-items" : "nav-items hide-menu-items"}>
-        <div className="links">
-          {props.link_item.map((link, index) => (
-            <a href="/" key={index}>
-              {link}
-            </a>
-          ))}
-        </div>
-        <div className="authentication">
-          {props.buttons.map((btn, index) => (
-            <button className="btn" key={index}>
-              {btn}
-            </button>
-          ))}
-        </div>
-      </div>
+  render() {
+    let { showItems, showLinks } = this.state;
+    let data = BRAND_DATA.brand_data;
 
-      <div
-        className={togglerClose ? "toggler_close" : "nav_toggler"}
-        onClick={toggleNavMenu}
-      />
-    </div>
-  );
-};
+    return (
+      <div className="navbar">
+        <div className="logo" />
+        <div className={showItems ? "nav-items" : "nav-items hide-menu-items"}>
+          <ul className="links">
+            {data.map(({ header_name, header_support }, index) => (
+              <li key={index}>
+                <a href="#" id={`${header_name}`}>
+                  {header_name}
+                </a>
+                <ul
+                  className={
+                    showLinks ? "sub_links" : "sub_links hide_sub_links"
+                  }
+                >
+                  {header_support.map((subLink, index) => (
+                    <li key={index}>
+                      <a href="#">{subLink}</a>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ))}
+          </ul>
+          <div className="authentication">
+            {this.props.buttons.map((btn, index) => (
+              <button className="btn" key={index}>
+                {btn}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div
+          className={showItems ? "toggler_close" : "nav_toggler"}
+          onClick={this.toggleNavMenu}
+        />
+      </div>
+    );
+  }
+}
 
 export default Navbar;

@@ -1,10 +1,10 @@
 import React from "react";
 import { ReactComponent as Logo } from "../../assets/images/logo.svg";
-import FOOTER_DATA from "../../assets/data/footer.data";
+import BRAND_DATA from "../../assets/data/brand_data";
 import "./footer.styles.scss";
 
 const Footer = () => {
-  const footerData = FOOTER_DATA.brand_data;
+  const footerData = BRAND_DATA.brand_data;
 
   return (
     <div className="footer">

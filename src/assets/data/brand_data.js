@@ -1,4 +1,4 @@
-const FOOTER_DATA = {
+const BRAND_DATA = {
   brand_data: [
     {
       header_name: "Product",
@@ -21,4 +21,4 @@ const FOOTER_DATA = {
   ],
 };
 
-export default FOOTER_DATA;
+export default BRAND_DATA;

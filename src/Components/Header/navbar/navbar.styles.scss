@@ -27,6 +27,9 @@
 .links {
   position: relative;
   left: -18%;
+  list-style: none;
+  display: flex;
+
   a {
     position: relative;
     text-decoration: none;
@@ -51,6 +54,32 @@
       background: url(../../../assets/images/icon-arrow-light.svg) no-repeat;
       margin-left: 0.2rem;
     }
+  }
+
+  .sub_links {
+    display: none;
+    list-style: none;
+    position: absolute;
+    background-color: white;
+    width: 45%;
+    z-index: 20;
+    border-radius: 8%;
+    li {
+      width: 100%;
+      text-align: center;
+      padding: 0.8rem 0.5rem;
+      a {
+        font-size: 1.2rem;
+        color: grey;
+        &::after {
+          content: "";
+          background: none;
+        }
+      }
+    }
+  }
+  .hide_sub_links {
+    display: none;
   }
 }
 
@@ -88,7 +117,7 @@
   display: none;
 }
 
-@media (max-width: 808px) {
+@media (max-width: 875px) {
   .navbar {
     position: relative;
   }
@@ -111,16 +140,19 @@
       flex-direction: column;
       justify-content: space-around;
       left: 0;
-      a {
-        color: black;
-        text-align: center;
+      li {
         margin: 2rem 0;
+        a {
+          color: black;
+          text-align: center;
 
-        &::after {
-          background-image: url(../../../assets/images/icon-arrow-dark.svg);
+          &::after {
+            background-image: url(../../../assets/images/icon-arrow-dark.svg);
+          }
         }
       }
     }
+
     .authentication {
       width: 96%;
       right: 0;
