@@ -3,7 +3,7 @@ import "./art-infrasturcture.styles.scss";
 
 const ArtInfrastructure = () => {
   return (
-    <div className="art">
+    <div className="art" id="Company">
       <div className="mobile_logo" />
       <div className="container">
         <h2>State of the Art Infrastructure</h2>

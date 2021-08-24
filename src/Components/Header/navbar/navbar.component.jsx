@@ -20,7 +20,7 @@ class Navbar extends React.Component {
   };
 
   render() {
-    let { showItems, showLinks } = this.state;
+    let { showItems } = this.state;
     let data = BRAND_DATA.brand_data;
 
     return (
@@ -28,22 +28,9 @@ class Navbar extends React.Component {
         <div className="logo" />
         <div className={showItems ? "nav-items" : "nav-items hide-menu-items"}>
           <ul className="links">
-            {data.map(({ header_name, header_support }, index) => (
+            {data.map(({ header_name }, index) => (
               <li key={index}>
-                <a href="#" id={`${header_name}`}>
-                  {header_name}
-                </a>
-                <ul
-                  className={
-                    showLinks ? "sub_links" : "sub_links hide_sub_links"
-                  }
-                >
-                  {header_support.map((subLink, index) => (
-                    <li key={index}>
-                      <a href="#">{subLink}</a>
-                    </li>
-                  ))}
-                </ul>
+                <a href={`#${header_name}`}>{header_name}</a>
               </li>
             ))}
           </ul>

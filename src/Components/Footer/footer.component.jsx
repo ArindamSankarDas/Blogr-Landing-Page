@@ -7,7 +7,7 @@ const Footer = () => {
   const footerData = BRAND_DATA.brand_data;
 
   return (
-    <div className="footer">
+    <div className="footer" id="Connect">
       <Logo className="brand_logo" />
 
       <div className="brand_links">

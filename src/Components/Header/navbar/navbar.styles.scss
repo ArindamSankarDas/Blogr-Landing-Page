@@ -56,31 +56,30 @@
     }
   }
 
-  .sub_links {
-    display: none;
-    list-style: none;
-    position: absolute;
-    background-color: white;
-    width: 45%;
-    z-index: 20;
-    border-radius: 8%;
-    li {
-      width: 100%;
-      text-align: center;
-      padding: 0.8rem 0.5rem;
-      a {
-        font-size: 1.2rem;
-        color: grey;
-        &::after {
-          content: "";
-          background: none;
-        }
-      }
-    }
-  }
-  .hide_sub_links {
-    display: none;
-  }
+  // .sub_links {
+  //   list-style: none;
+  //   position: absolute;
+  //   background-color: white;
+  //   width: 45%;
+  //   z-index: 20;
+  //   border-radius: 8%;
+  //   li {
+  //     width: 100%;
+  //     text-align: center;
+  //     padding: 0.8rem 0.5rem;
+  //     a {
+  //       font-size: 1.2rem;
+  //       color: grey;
+  //       &::after {
+  //         content: "";
+  //         background: none;
+  //       }
+  //     }
+  //   }
+  // }
+  // .hide_sub_links {
+  //   display: none;
+  // }
 }
 
 .authentication {
