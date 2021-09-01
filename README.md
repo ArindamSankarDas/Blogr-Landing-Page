@@ -39,7 +39,7 @@ Users should be able to:
 - Flexbox
 - CSS custom properties
 - Mobile-first workflow
-- Firebase Hosting
+- Vercel Hosting
 
 ### What I learned
 
