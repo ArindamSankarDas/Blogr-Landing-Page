@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/ArindamSankarDas/Blogr-Landing-Page)
-- Live Site URL: [Add live site URL here](https://blogr-landing-page.web.app/)
+- Solution URL: [solution URL here](https://github.com/ArindamSankarDas/Blogr-Landing-Page)
+- Live Site URL: [live site URL here](https://blogr-landing-page-ivory.vercel.app/)
 
 ## My process
 
