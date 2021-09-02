@@ -32,6 +32,12 @@
 
 @media (max-width: 547px) {
   .header {
-    height: 64vh;
+    height: 66vh;
+  }
+}
+@media (max-width: 320px) {
+  .header {
+    height: 75vh;
+    border-bottom-left-radius: 7rem;
   }
 }

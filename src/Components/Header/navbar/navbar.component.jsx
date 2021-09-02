@@ -1,5 +1,6 @@
 import React from "react";
 import BRAND_DATA from "../../.../../../assets/data/brand_data";
+import SmallButton from "../../Buttons/small-Button/sm-button.component";
 import "./navbar.styles.scss";
 
 class Navbar extends React.Component {
@@ -35,11 +36,8 @@ class Navbar extends React.Component {
             ))}
           </ul>
           <div className="authentication">
-            {this.props.buttons.map((btn, index) => (
-              <button className="btn" key={index}>
-                {btn}
-              </button>
-            ))}
+            <SmallButton>Login</SmallButton>
+            <SmallButton>Sign Up</SmallButton>
           </div>
         </div>
 

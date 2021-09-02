@@ -31,41 +31,21 @@
 
 .title_btn {
   margin-top: 3rem;
-  .btn {
-    border: none;
-    padding: 1.2rem 2rem;
-    border-radius: 3rem;
-    cursor: pointer;
-    font-weight: 600;
-    font-family: "Overpass", sans-serif;
-    letter-spacing: 0.1rem;
-    &:first-child {
-      background-color: var(--white-text);
-      margin-right: 1rem;
-      padding-top: calc(1.2rem + 0.2rem);
-      &:hover,
-      :active {
-        background-color: var(--Very-light-red);
-        color: var(--white-text);
-      }
-    }
-    &:last-child {
-      background-color: transparent;
-      border: 2px solid var(--white-text);
-      color: var(--white-text);
-      &:hover,
-      :active {
-        background-color: var(--white-text);
-        color: var(--Very-light-red);
-      }
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 875px) {
+  .title_heading {
+    h1 {
+      font-size: 4rem;
     }
   }
 }
 
-@media (max-width: 875px) {
+@media (max-width: 384px) {
   .title_heading{
     h1{
-      font-size: 4rem;
+      font-size: 3.5rem;
     }
   }
 }

@@ -1,7 +1,8 @@
 import React from "react";
-import './title.styles.scss'
+import MediumButton from "../../Buttons/medium-Button/md-button.component.jsx";
+import "./title.styles.scss";
 
-const Title = (props) => {
+const Title = () => {
   return (
     <div className="title">
       <div className="title_heading">
@@ -10,11 +11,8 @@ const Title = (props) => {
       </div>
 
       <div className="title_btn">
-        {props.title_btn.map((btn, index) => (
-          <button className="btn" key={index}>
-            {btn}
-          </button>
-        ))}
+        <MediumButton>Start for Free</MediumButton>
+        <MediumButton>Learn More</MediumButton>
       </div>
     </div>
   );
