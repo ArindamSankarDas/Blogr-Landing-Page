@@ -4,7 +4,7 @@ import "./details.styles.scss";
 
 const Details = () => {
   return (
-    <div className="details" id="Product">
+    <div className="details">
       <h1>Designed for the future</h1>
       <Container className="container" />
     </div>

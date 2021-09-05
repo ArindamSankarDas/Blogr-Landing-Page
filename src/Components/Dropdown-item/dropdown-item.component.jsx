@@ -23,11 +23,11 @@ class DropdownItem extends React.Component {
 
     return (
       <li onClick={this.toggleSubLinks}>
-        <a href="#">{header_name}</a>
+        <a href="#/">{header_name}</a>
         <ul className={showLinks ? "sub-links" : "sub-links hide_sub_links"}>
           {header_support.map((subItem, index) => (
             <li key={index}>
-              <a href="#">{subItem}</a>
+              <a href="#/">{subItem}</a>
             </li>
           ))}
         </ul>
