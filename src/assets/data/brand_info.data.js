@@ -1,4 +1,4 @@
-const footer_data = {
+const INFO = {
   brand_data: [
     {
       header_name: "Product",
@@ -10,7 +10,7 @@ const footer_data = {
         "Integrations",
       ],
     },
-    {
+    { 
       header_name: "Company",
       header_support: ["About", "Team", "Blog", "Carrers"],
     },
@@ -20,4 +20,4 @@ const footer_data = {
     },
   ],
 };
-export default footer_data
+export default INFO;
