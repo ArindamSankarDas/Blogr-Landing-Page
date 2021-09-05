@@ -11,7 +11,6 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](http
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
@@ -28,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution URL here](https://github.com/ArindamSankarDas/Blogr-Landing-Page)
-- Live Site URL: [live site URL here](https://blogr-landing-page-five-steel.vercel.app/)
+- Live Site URL: [live site URL here](https://blogr-landing-page-eight-cyan.vercel.app/)
 
 ## My process
 
