@@ -10,7 +10,6 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](http
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
 - [Author](#author)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
@@ -48,15 +47,6 @@ Some of the Core topics on which I was able to decide while building this projec
 1. Which Components should be broken down and which of them can be reusable.
 2. Where to store the state.
 3. What changes when the state changes.
-
-### Continued development
-
-However this project wasn't that much successfull as I am still learning REACT and I don't know some of the various functionality of this library yet.
-
-**I was not able to create the dropdown menu of the header section**
-
-So, when I will accquire a little bit more knowledge of this JS Lib. , I will surely overcome this problem
-and be able to create a successfull dropdown menu.
 
 ## Author
 
