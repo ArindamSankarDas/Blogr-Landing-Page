@@ -58,22 +58,13 @@
     box-shadow: -2px 2px 19px #2d313b;
     border-radius: 1rem;
     .links {
+      position: relative;
+      left: 0;
+      width: 100%;
       margin-top: 1.8rem;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
-      left: 0;
-      li {
-        margin: 2rem 0;
-        a {
-          color: black;
-          text-align: center;
-
-          &::after {
-            background-image: url(../../../assets/images/icon-arrow-dark.svg);
-          }
-        }
-      }
+      justify-content: center;
     }
 
     .authentication {

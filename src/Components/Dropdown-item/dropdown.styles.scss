@@ -1,4 +1,4 @@
-a{
+a {
   position: relative;
   text-decoration: none;
   font-size: 1.6rem;
@@ -29,16 +29,26 @@ a{
   list-style: none;
   position: absolute;
   background-color: white;
-  width: 48%;
+  width: 45%;
   z-index: 20;
-  border-radius: 8%;
+  border-radius: 2rem;
   li {
     width: 100%;
-    text-align: center;
-    padding: 0.8rem 0.5rem;
+    padding: 0.75rem 0;
     a {
       font-size: 1.2rem;
-      color: grey;
+      color: hsl(208, 49%, 24%);
+      font-weight: 700;
+      text-decoration: none;
+
+      &:hover,
+      :active {
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: black;
+        transition: all 0.2s linear;
+      }
+
       &::after {
         content: "";
         background: none;
@@ -49,4 +59,36 @@ a{
 
 .hide_sub_links {
   display: none;
+}
+
+@media (max-width: 875px) {
+  li {
+    margin: 2rem 0;
+    text-align: center;
+    a {
+      color: black;
+
+      &::after {
+        background-image: url(../../assets/images/icon-arrow-dark.svg);
+      }
+    }
+  }
+
+  .sub-links {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: yellow;
+    text-align: center;
+    width: 80%;
+    li {
+      padding: 0;
+      &:first-child {
+        padding-top: 1rem;
+      }
+      &:last-child {
+        padding-bottom: 1rem;
+      }
+    }
+  }
 }
