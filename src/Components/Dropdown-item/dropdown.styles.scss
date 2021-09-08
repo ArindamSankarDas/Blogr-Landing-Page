@@ -37,7 +37,7 @@ a {
     padding: 0.75rem 0;
     a {
       font-size: 1.2rem;
-      color: hsl(208, 49%, 24%);
+      color: hsla(206, 13%, 34%, 0.726);
       font-weight: 700;
       text-decoration: none;
 
@@ -79,8 +79,8 @@ a {
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
-    border-radius: 2rem;
-    background-color: yellow;
+    border-radius: 1rem;
+    background-color: hsla(240, 2%, 82%, 0.575);
     text-align: center;
     li {
       padding: 0;
@@ -89,6 +89,14 @@ a {
       }
       &:last-child {
         padding-bottom: 1rem;
+      }
+
+      a {
+        font-size: 1.4rem;
+        &:hover,
+        :active {
+          font-size: 1.5rem;
+        }
       }
     }
   }
