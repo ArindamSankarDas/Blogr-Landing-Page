@@ -31,7 +31,7 @@ a {
   background-color: white;
   width: 45%;
   z-index: 20;
-  border-radius: 2rem;
+  border-radius: 8%;
   li {
     width: 100%;
     padding: 0.75rem 0;
@@ -78,9 +78,10 @@ a {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    width: 80%;
+    border-radius: 2rem;
     background-color: yellow;
     text-align: center;
-    width: 80%;
     li {
       padding: 0;
       &:first-child {
